@@ -1,0 +1,5 @@
+# Ignoring text files inside of the default file folder.
+initialLoadFiles
+
+# Ignoring cache python files.
+*.pyc

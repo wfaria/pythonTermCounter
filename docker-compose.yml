@@ -1,0 +1,17 @@
+version: "3"
+services:
+    termcounterserver:
+        build: ./termCounterServer        
+        deploy:
+            replicas: 2           
+            restart_policy:
+                condition: on-failure
+                   
+        # Binding internal port 80 to external port 80.
+        ports:
+            - "80:80"
+
+    redis:
+        image: redis
+        ports:
+            - 6379:6379 
