@@ -30,6 +30,8 @@ Try to access the localhost service to see if the server is OK. You should be ab
 > **Hostname:** 7d3bbf4664df  
 > **Visits:** 1
 
+## Service routes
+
 ### String ingestion
 
 There is a method on the project able to process a string input, breaking it into multiple words and normalizing them (removing diacritics, extra spaces). After that, it groups each token and return the number of times which each word appeared. This method is used by all routes from this section.
